@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#main{
+    display: none;
+}
+#help, #label-area{
+    margin-top: 2rem;
+}
+#about{
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+}
+#circle{
+    width: 100px;
+    height: 100px;
+    background-color: #d32d12;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -70px;
+    margin-top: -70px;
+    transition: 2s all;
+}
+#circle span#digit{
+    text-align: center;
+    font-size: 45px;
+    color: white;
+}
+
+.loader{
+    width: 100%;
+    height: 100vh;
+    background-color: #f4f4f4;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.loader .preloader-wrapper{
+    margin:0 auto;
+}

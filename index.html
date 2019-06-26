@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sound Classification - ml5.js</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/ml5@0.3.1/dist/ml5.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="loader">
+        <div class="preloader-wrapper active">
+            <div class="spinner-layer spinner-red-only">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+        <h5 style="text-align:center">Loading assets...</h5>
+    </div>
+
+    <div class="container" id="main">
+
+        <!-- Help modal button -->
+        <button id="help" class="btn red darken-2 right waves-effect waves-light">Help</button>
+
+        <!-- show label (what user is saying) -->
+        <div id="label-area">
+            What you are saying : <b><span id="label"></span></b>
+        </div>
+
+        <!-- Modal showing instructions to use app -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4>Instructions</h4>
+                <p>
+                    <ul>
+                        <li>
+                            <p>Try to say <b>left, right, up, down</b> in order to move the ball.</p>
+                        </li>
+                        <li>
+                            <p>Say <b>zero, one, two</b> upto <b>nine</b> to change the digit in the circle and
+                                transform to that scale.</p>
+                        </li>
+                    </ul>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Okay</a>
+            </div>
+        </div>
+
+        <div class="" id="circle">
+            <span id="digit">9</span>
+        </div>
+
+    </div>
+
+    <a href="#about_modal" class="btn-btn-flat grey-text modal-trigger" id="about">About App</a>
+
+    <div id="about_modal" class="modal">
+        <div class="modal-content">
+            <h4>About</h4>
+            <p>This is a demo app made by <a href="https://twitter.com/@imishaan005">Ishaan sHeikh</a> using <a href="https://ml5js.org">ml5.js</a>,
+                a machine learning library built on top of TensorFlow.js</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok</a>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
